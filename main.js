@@ -1,15 +1,18 @@
-function convertir(){
-    var valore = parseInt(document.getElementById("valor").value)
-    var resultado = 0;
-    var dólar = 365;
-    var euro = 373
-    if(document.getElementById("uno").checked){
-        resultado = valore/dólar;
-        alert("El cambio de pesos a dólares es " + resultado)
-    }else if(document.getElementById("dos").checked){
-        resultado = valore/euro;
-        alert("el cambio de pesos a euro es " + resultado);
-    }else{
-        alert("tienes que poner un numero")
+function convertir() {
+    const valorDOM = document.getElementById("valor");
+    const valor1 = document.getElementById("uno");
+    const valor2 = document.getElementById("dos");
+
+    let valore = parseFloat(valorDOM.value);
+    let resultado = 0;
+
+    if (valor1.checked) {
+        resultado = valore / 365;
+        alert("El cambio de pesos a dólares es " + resultado);
+    } else if (valor2.checked) {
+        resultado = valore / 373;
+        alert("El cambio de pesos a euros es " + resultado);
+    } else {
+        alert("Debes seleccionar una moneda");
     }
 }
