@@ -10,14 +10,17 @@
 <body>
 
     <div class="conversor">
-    <h3> conversor de monedas</h3>
-    <form>
-        <p>seleccionar moneda a convertir</p>
+    <h1>Conversor de monedas.</h1>
+    <h3> Moneda extranjera a peso Argentino.</h3>
+    <form class="form">
+        <p>Seleccionar moneda a convertir.</p>
         <input type="radio" name="cambio" id="uno">Dolar
         <input type="radio" name="cambio" id="dos">Euro
-        <p>ingrese monto</p>
-            <input type="number" id="valor">
-            <input type="button"  id="cotizar" onclick="convertir()">
+        <p>Ingrese monto el monto deseado</p>
+        <div class="buttons">
+        <input class="input" type="number" id="valor">
+        <button class="button" id="cotizar" onclick="convertir()">Cotizar</button>
+        </div>
     </form>
     </div>
 </body>

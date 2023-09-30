@@ -1,10 +1,23 @@
 function convertir() {
-    const valorDOM = document.getElementById("valor");
-    const valor1 = document.getElementById("uno");
-    const valor2 = document.getElementById("dos");
-
-    let valore = parseFloat(valorDOM.value);
+    let valore;
     let resultado = 0;
+    let valorDOM;
+    let valor1;
+    let valor2;
+
+    while (true) {
+        valorDOM = document.getElementById("valor");
+        valor1 = document.getElementById("uno");
+        valor2 = document.getElementById("dos");
+
+        valore = parseFloat(valorDOM.value);
+
+        if (!isNaN(valore)) {  
+            break;
+        }
+
+        alert("Por favor, ingresa un valor numérico válido.");
+    }
 
     if (valor1.checked) {
         resultado = valore / 365;

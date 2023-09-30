@@ -1,22 +1,37 @@
 * {
-    margin: 0%;
-    padding: 0%;
-    background-color: rgb(156, 156, 234);
-  }
-
-  .conversor{
-    margin: 2%;
-    padding: 5px; 
-  }
-  #cotizar{
-    width: 50px;
-    height: 18px;
-    background-color: rgb(168, 118, 243);
-  }
-#valor{
-    width: 10%;
-    height: 18px;
-
+  margin: 0%;
+  padding: 0%;
+  background-color: rgb(156, 156, 234);
 }
-  
+
+.conversor{
+  display: block;
+  align-items: center;
+  padding: 90px; 
+  margin-left: 100px;
+}
+
+.form {
+  padding: 20px;
+  padding-right: 5rem;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.input {
+  height: auto;
+  width: 100px;
+  margin: 20px;
+}
+
+.button {
+  width: 100px;
+  height: auto;
+  margin-right: 200px;
+}
  
